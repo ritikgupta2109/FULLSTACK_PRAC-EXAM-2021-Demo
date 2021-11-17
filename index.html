@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Practical</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&family=Signika+Negative&family=Yuji+Boku&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            /* background: url(./campaign-creators-gMsnXqILjp4-unsplash.jpg); */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: black;
+        }
+        .header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+            margin-bottom: 20px;
+        }
+        .header::before{
+        background-image: url(./campaign-creators-gMsnXqILjp4-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: .5;
+        content: "";
+        position: absolute;
+        width:100%;
+        height:100%;
+        z-index: -1;
+        top:0;
+        left:0;
+
+    }
+        h1.head{
+            font-family: 'Noto Serif', serif;
+            color: white;
+            font-size: 40px;
+            /* float: left; */
+            margin-left: 100px;
+        }
+
+        .navbar ul.list{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-direction: row;
+            /* border: 2px solid black; */
+            width: 60vw;
+            height: 20vh;
+            flex-wrap: wrap;
+        }
+        .navbar ul.list li{
+            list-style: none;
+            font-family: 'Noto Serif', serif;
+        }
+        
+        .navbar ul.list li a{
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 20px;
+            color: white;
+            font-size: 20px;
+        }
+        .navbar ul.list li a:hover{
+            background-color: cornflowerblue;
+        }
+
+        .mid{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 80vw;
+            /* border: 2px solid black; */
+            margin-left: 120px;
+            margin-top: 25px;
+            margin-bottom: 50px;
+        }
+        .mid div.midd span.a1{
+            color: white;
+            font-size: 60px;
+            font-family: 'Noto Serif', serif;
+        }
+        .mid div.midd span.a2{
+            /* color: white; */
+            font-size: 60px;
+            font-family: 'Noto Serif', serif;
+            color: cornflowerblue;
+        }
+        .mid p{
+            font-size: 20px;
+            text-align: center;
+            color: white;
+        }
+        .search{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 60vw;
+            flex-wrap: wrap;
+            /* border: 2px solid black; */
+            height: 18vh;
+            background-color: white;
+            margin-left: 275px;
+            margin-top: 100px;
+            
+        }
+
+        .search p{
+            font-size: 18px;
+            color: gray;
+        }
+
+        .search a{
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            background-color: cornflowerblue;
+            padding: 10px 25px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+
+        <h1 class="head">Browse</h1>
+        
+        <div class="navbar">
+            <ul class="list">
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#">Dropdown</a></li>
+                <li class="item"><a href="#">Listings</a></li>
+                <li class="item"><a href="#">About</a></li>
+                <li class="item"><a href="#">Blog</a></li>
+                <li class="item"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <div class="mid">
+        <div class="midd">
+
+            <span class="a1">Find Nearby&nbsp;</span>
+            <span class="a2">Events |</span>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas molestiae incidunt provident praesentium deserunt at laborum dolorum laudantium alias culpa.</p>
+    </div>
+
+    <div class="search">
+        <p>What are you looking for?</p>
+        <p>location &nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-map-marker"></i></p>
+        <p>All Categories</p>
+        <a href="#">Search</a>
+    </div>
+</body>
+</html>
